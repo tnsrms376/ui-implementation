@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aircase</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="items.css" />
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="items.js"></script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html#fifth">제작자 소감</a></li>
+            <li><a href="../index.html#fourth">상품구매</a></li>
+            <li><a href="../index.html#third">미니게임</a></li>
+            <li><a href="../index.html#second">예매</a></li>
+            <li><a href="../Artist-lineup/1.artist-list.html">아티스트 소개</a></li>
+        </ul>
+    </nav>
+
+    <div class="contents">
+        <div style="padding:0;">
+
+            <div id="headarea">
+                <p id="headname">ㅇㅏㅌㅣㅅㅡㅌㅡ ㅅㅏㅇㅍㅜㅁ</p>
+                <!-- <p style="font-size: small;">ㅇㅏㅌㅣㅅㅡㅌㅡㄱㅜㅅㅈㅡ</p> -->
+                <p style="font-size: small;">Korean Contemporary Traditional Art Festival</p>
+            </div>
+
+        </div>
+
+        <div class="topbox" style="display: inline; width: 1500px;">
+            <div style="display: inline-block;">
+                <div class="tab-contents" id="tabPanel1">
+                    <div class="itemImg" style=" float: left; width: 480px; margin: 10px 0px 0px 50px;">
+                        <img src="../img/aircase.png" class="itemslide"
+                            style="width: 100%; min-width: 200px;  border: 2px solid #385161; float: left; margin:70px 10px 20px 0; display: block;">
+                    </div>
+                    <div class="itemImg" style="float: left; width: 480px; margin: 10px 0px 0px 50px;">
+                        <img src="../img/aircase1.png" class="itemslide"
+                            style="width: 100%; min-width: 200px;  border: 2px solid #385161; float: left; margin:70px 10px 20px 0; display: block;">
+                    </div>
+                    <div class="itemImg" style="float: left; width: 480px; margin: 10px 0px 0px 50px;">
+                        <img src="../img/aircase2.png" class="itemslide"
+                            style="width: 100%; min-width: 200px;  border: 2px solid #385161; float: left; margin:70px 10px 20px 0; display: block;">
+                    </div>
+                    <div class="itemImg" style=" float: left; width: 480px; margin: 10px 0px 0px 50px;">
+                        <img src="../img/aircase3.png" class="itemslide"
+                            style="width: 100%; min-width: 200px;  border: 2px solid #385161; float: left; margin:70px 10px 20px 0; display: block;">
+                    </div>
+                </div>
+
+
+
+
+                <ul class="classitems" id="itemslideul"
+                    style="margin-left:100px;  margin-top: 5px; width: 500px; margin-right: 0; ">
+                    <li class="itemslide"><img src="../img/aircase.png"
+                            style="width: 20%;  min-width: 80px; border: 1px solid #385161; margin-right:15px">
+                    </li>
+                    <li class="itemslide">
+                        <img src="../img/aircase1.png"
+                            style="width: 20%; min-width: 80px; border: 1px solid #385161;   margin-right: 15px; ">
+                    </li>
+                    <li class="itemslide">
+                        <img src="../img/aircase2.png"
+                            style="width: 20%;  min-width: 80px; border: 1px solid #385161;  margin-right: 15px;">
+                    </li>
+                    <li class="itemslide">
+                        <img src="../img/aircase3.png"
+                            style="width: 20%;  min-width: 80px; border: 1px solid #385161;  margin-right:0">
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+
+            <form class="orderform">
+                <fieldset
+                    style="width: 350px; height: 528px; padding: 30px;  border:2px dotted #385161; border-style: groove;">
+                    <!-- <legend>주문상세</legend> -->
+                    <br /><br />
+                    <p class="fontstyle">에어팟케이스</p>
+                    <br /><br />
+                    <p>케이스에 대한 간략한 설명입니다 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam sequi qui
+                        sapiente nostrum nam omnis cum enim, dignissimos ad tempora soluta voluptatum praesentium
+                        adipisci dolorum quisquam maxime id autem incidunt.
+                    </p>
+                    <br /><br /><br />
+                    <p style="float: right;">개당 가격 : 20000 원</p>
+                    <br /><br />
+                    <label style="display: inline; float: right;">주문수량&nbsp; &nbsp; <input type="number"
+                            name="each"></label>
+                    <br /><br /><br />
+                    <button id="btnOrder" class="fontstyle">주문하기</button>
+                </fieldset>
+            </form>
+        </div>
+
+
+
+        <div>
+            <hr>
+
+            <div id="qna" style="clear: both; padding: 5px; ">
+                <input type="text" id="menuName" style="margin-left: 100px;" />
+                <button id="add">질문등록하기</button>
+                <button id="remove">질문삭제하기</button>
+            </div>
+            <ul class="menu" style="height: auto; min-height: 100px;">
+
+            </ul>
+            <hr>
+        </div>
+
+
+
+        <div id="details" style="clear: both; padding-left:100px;">
+            <div class="cont">
+                <div class="contArea">
+                    <h3><span style="font-weight: bold!important;">[상품결제정보]</span></h3>
+                    고액결제의 경우 안전을 위해 카드사에서 확인전화를 드릴 수도 있습니다. <br>
+                    확인과정에서 도난 카드의 사용이나 타인 명의의 주문등
+                    정상적인 주문이 아니라고 판단될 경우 임의로 주문을 보류 또는 취소할 수 있습니다. &nbsp; <br>
+                    <br>
+                    무통장 입금은 상품 구매 대금은 PC뱅킹, 인터넷뱅킹, 텔레뱅킹 혹은 가까운 은행에서 직접 입금하시면 됩니다. &nbsp;<br>
+                    주문시 입력한&nbsp;입금자명과 실제입금자의 성명이 반드시 일치하여야 하며, 7일 이내로 입금을 하셔야 하며&nbsp;입금되지
+                    않은 주문은 자동취소 됩니다. <br>
+                </div>
+
+                <div class="contArea">
+                    <br />
+                    <h3><span style="font-weight: bold!important;">[배송정보]</span></h3>
+                    <ul class="delivery">
+                        <li>배송 방법 : 택배</li>
+                        <li>배송 지역 : 전국지역</li>
+                        <li>배송 비용 : 3,000원</li>
+                        <li>배송 기간 : 1일 ~ 3일</li>
+                        <li>배송 안내 : - 산간벽지나 도서지방은 별도의 추가금액을 지불하셔야 하는 경우가 있습니다.<br>
+                            고객님께서 주문하신 상품은 입금 확인후 배송해 드립니다. 다만, 상품종류에 따라서 상품의 배송이 다소 지연될 수 있습니다.<br>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="contArea">
+                    <br />
+                    <h3><span style="font-weight: bold!important;">[교환 및 반품정보]</span></h3>
+                    <b>교환 및 반품 주소</b><br />- [12242] 경기도 남양주시 일패동 360-1 <b><br /><br />교환 및 반품이 가능한 경우</b><br>
+                    - 상품을 공급 받으신 날로부터 7일이내 단, 가전제품의<br>
+                    &nbsp;&nbsp;경우 포장을 개봉하였거나 포장이 훼손되어 상품가치가 상실된 경우에는 교환/반품이 불가능합니다.<br>
+                    - 공급받으신 상품 및 용역의 내용이 표시.광고 내용과<br>
+                    &nbsp;&nbsp;다르거나 다르게 이행된 경우에는 공급받은 날로부터 3월이내, 그사실을 알게 된 날로부터 30일이내<br>
+                    <br>
+
+                    <b>교환 및 반품이 불가능한 경우</b><br>
+                    - 고객님의 책임 있는 사유로 상품등이 멸실 또는 훼손된 경우. 단, 상품의 내용을 확인하기 위하여<br>
+                    &nbsp;&nbsp;포장 등을 훼손한 경우는 제외<br>
+                    - 포장을 개봉하였거나 포장이 훼손되어 상품가치가 상실된 경우<br>
+                    &nbsp;&nbsp;(예 : 가전제품, 식품, 음반 등, 단 액정화면이 부착된 노트북, LCD모니터, 디지털 카메라 등의 불량화소에<br>
+                    &nbsp;&nbsp;따른 반품/교환은 제조사 기준에 따릅니다.)<br>
+                    - 고객님의 사용 또는 일부 소비에 의하여 상품의 가치가 현저히 감소한 경우 단, 화장품등의 경우 시용제품을 <br>
+                    &nbsp;&nbsp;제공한 경우에 한 합니다.<br>
+                    - 시간의 경과에 의하여 재판매가 곤란할 정도로 상품등의 가치가 현저히 감소한 경우<br>
+                    - 복제가 가능한 상품등의 포장을 훼손한 경우<br>
+                    &nbsp;&nbsp;(자세한 내용은 고객만족센터 1:1 E-MAIL상담을 이용해 주시기 바랍니다.)<br>
+                    <br>
+                    ※ 고객님의 마음이 바뀌어 교환, 반품을 하실 경우 상품반송 비용은 고객님께서 부담하셔야 합니다.<br>
+                    &nbsp;&nbsp;(색상 교환, 사이즈 교환 등 포함)<br><br><br><br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="buytogether" style="overflow: hidden;">
+        <hr>
+        <hr style="background-color: white;">
+        <hr>
+
+        <p id="totext" style="background-color: whitesmoke; opacity: 80%; text-align: center;">같이 구매하면 좋은 상품</p>
+
+
+        <ul class="toItems" style="height: 200px;">
+            <div class="h-scroll">
+                <li><a href="st1.html">
+                        <img src="../img/st1.jpg" class="small1" id="to1" alt="폰스트랩">
+                    </a>
+                </li>
+                <li><a href="st2.html">
+                        <img src="../img/st2.jpg" class="small1" id="to1" alt="폰스트랩">
+                    </a>
+                </li>
+                <li><a href="phcase.html">
+                        <img src="../img/phcase.jpg" class="small1" id="to1" alt="폰케이스">
+                    </a>
+                </li>
+
+                <li><a href="jejuglass.html">
+                        <img src="../img/jejuglass.jpg" class="small1" id="to1" alt="제주컵">
+                    </a>
+                </li>
+                <li><a href="mask.html">
+                        <img src="../img/mask.jpg" class="small1" id="to1" alt="마스크">
+                    </a>
+                </li>
+                <li><a href="mug.html">
+                        <img src="../img/mug.jpg" class="small1" id="to1" alt="머그">
+                    </a>
+                </li>
+                <li><a href="scarf.html">
+                        <img src="../img/scarf.jpg" class="small1" id="to1" alt="스카프">
+                    </a>
+                </li>
+                <li><a href="p1.html">
+                        <img src="../img/p1.jpg" class="small1" id="to1" alt="핀1">
+                    </a>
+                </li>
+      
+                <li><a href="clo.html">
+                        <img src="../img/clo.png" class="small1" id="to1" alt="옷">
+                    </a>
+                </li>
+                <li><a href="tumbler.html">
+                        <img src="../img/tumbler.jpg" class="small1" id="to1" alt="텀블러">
+                    </a>
+                </li>
+                <li><a href="phcase.html">
+                        <img src="../img/phcase.jpg" class="small1" id="to1" alt="폰케이스">
+                    </a>
+                </li>
+                <li><a href="tw.html">
+                        <img src="../img/tw.jpg" class="small1" id="to1" alt="타월">
+                    </a>
+                </li>
+            </div>
+        </ul>
+    </div>
+
+
+    </div>
+    <footer style="clear: both;">
+
+        <div style="padding-top: 20px;">
+            <p id="ftext">COPYRIGHT 2021 Korea Contemporary Traditional Arts Festival | ALL RIGHTS RESERVED </p>
+            <p id="ftext">대성할 친구들 | <a href="mailto: bitcamp@bit.com"> bitcamp@bit.com</a>
+        </div>
+
+
+
+
+        <a href="#headarea">
+            <img src="../img/topicon.png" class="icon">
+        </a>
+    </footer>
+
+    <a href="../festival.html">
+        <img src="../img/topicon.png" class="backicon">
+    </a>
+
+
+
+</body>
+
+
+
+
+</html>
